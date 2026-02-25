@@ -13,7 +13,7 @@ def send_email():
     msg["To"] = RECEIVER_EMAIL
     msg["Subject"] = "Scheduled Email with QR Code"
 
-    msg.set_content("Hello,\n\nHere is your QR code.\n")
+    msg.set_content("Hello,\n\nHope you read this.\n")
 
     with open("qrcode.png", "rb") as f:
         msg.add_attachment(
